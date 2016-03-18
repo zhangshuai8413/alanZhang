@@ -19,6 +19,7 @@
 
     if (_redView==nil) {
         _redView=[[UIView alloc] initWithFrame:CGRectMake(20, 20, 200, 200)];
+        _redView.backgroundColor=[UIColor redColor];
         [self.view addSubview:_redView];
     }
     return _redView;
@@ -30,7 +31,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
